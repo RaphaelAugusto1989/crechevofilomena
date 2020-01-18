@@ -1,0 +1,12 @@
+[22-Nov-2019 03:20:48 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home4/creche26/public_html/application/controllers/Contatos.php on line 47
+[22-Nov-2019 13:10:36 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home4/creche26/public_html/application/controllers/Contatos.php on line 47
+[22-Nov-2019 13:10:40 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home4/creche26/public_html/application/controllers/Contatos.php on line 47
+[22-Nov-2019 13:12:49 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home4/creche26/public_html/application/controllers/Contatos.php on line 47
+[22-Nov-2019 13:12:53 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home4/creche26/public_html/application/controllers/Contatos.php on line 47
+[22-Nov-2019 19:22:32 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /home4/creche26/public_html/application/controllers/Contatos.php on line 47
+[08-Jan-2020 20:44:13 America/Sao_Paulo] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home4/creche26/public_html/application/libraries/ValidaLogin.php on line 9
+[08-Jan-2020 23:04:19 America/Sao_Paulo] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home4/creche26/public_html/application/libraries/ValidaLogin.php on line 9
+[09-Jan-2020 02:58:27 America/Sao_Paulo] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home4/creche26/public_html/application/libraries/ValidaLogin.php on line 9
+[09-Jan-2020 04:30:09 America/Sao_Paulo] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home4/creche26/public_html/application/libraries/ValidaLogin.php on line 9
+[09-Jan-2020 15:43:37 America/Sao_Paulo] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home4/creche26/public_html/application/libraries/ValidaLogin.php on line 9
+[09-Jan-2020 20:21:09 America/Sao_Paulo] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home4/creche26/public_html/application/libraries/ValidaLogin.php on line 9
