@@ -31,31 +31,34 @@
     <div class="row header sticky-top shadow bg-white"><!--INICIO DIV CABEÇALHO-->
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="<?= base_url('assets/img/logo_creche.png');?>" alt="" class="img-fluid" width="30%">
-                </div>
-                <div class="col-lg-8 align-middle">
-                    <ul class="nav menu justify-content-end mt-4">
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="<?= site_url();?>/">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-purple" href="<?= site_url();?>/#NossaCreche">NOSSA CRECHE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-success" href="<?= site_url();?>/#Servicos">SERVIÇOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-warning" href="<?= site_url();?>/#Galeria">GALERIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-orage" href="<?= site_url();?>/#Noticias">NOTÍCIAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" href="<?= site_url();?>/#Contatos">CONTATOS</a>
-                        </li>
-                    </ul>
-                </div>
+                <div id="menu" class="col-lg-12"><!--INICIO MENU-->
+                <img src="<?= base_url('assets/img/logo_creche.png');?>" alt="" class="img-fluid logo">
+                    <input type="checkbox" id="bt_menu">
+                        <label for="bt_menu">&#9776;</label>
+                    
+                    <nav class="menu">
+                        <ul class="ul_menu">
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="<?= site_url();?>/">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-purple" href="<?= site_url();?>/#NossaCreche">NOSSA CRECHE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-success" href="<?= site_url();?>/#Servicos">SERVIÇOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-warning" href="<?= site_url();?>/#Galeria">GALERIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-orage" href="<?= site_url();?>/#Noticias">NOTÍCIAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" href="<?= site_url();?>/#Contatos">CONTATOS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div><!--FIM MENU-->
             </div>
         </div>
     </div><!--FIM DIV CABEÇALHO-->

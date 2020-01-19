@@ -287,6 +287,8 @@
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        
+        $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top}, 1000,'swing');
     } //FIM ISCRIPT BOTÃO SUBIR AO TOPO
 
     
