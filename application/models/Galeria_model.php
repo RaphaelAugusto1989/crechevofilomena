@@ -54,6 +54,5 @@ class Galeria_model extends CI_Model {
 		$this->db->where('id_album', $idGaleria);
 		$this->db->delete('album');
 		return TRUE;
-	}
-    
+	}    
 }

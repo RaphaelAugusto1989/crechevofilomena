@@ -262,12 +262,40 @@ class Galeria extends CI_Controller {
     }
 
     public function AlteraNovasFotos() {
-        $idAlbum = $this->uri->segment(3);
+        $idGaleria = $this->uri->segment(3);
 
-        $dados = array('titulo' =>'Cadastrar Fotos - Creche Núcleo Bandeirante Vó Filomena', 'id_album' => $idAlbum );
+        $this->load->model('Galeria_model');
+		$galeria = $this->Galeria_model->DetalheAlbum($idGaleria);
+        $fotos = $this->Galeria_model->DetalheAlbumFotos($idGaleria);
+        
+        $dados = array('titulo' =>'Cadastrar Fotos - Creche Núcleo Bandeirante Vó Filomena', 'id_album' => $idGaleria, 'foto' => $fotos);
 
         $this->load->view('s_header', $dados);
         $this->load->view('s_galeria_fotos_altera', $dados);
         $this->load->view('s_footer');
-	}
+    }
+    
+    public function ExcluirFoto() {
+        $idFotos = $this->uri->segment(3);
+
+        $this->load->model('Fotos_model');
+        $lista = $this->Fotos_model->DetalheFotos($idFotos);
+        $true = $this->Fotos_model->DeletaFoto($idFotos);
+
+            foreach ($lista as $value => $list) {
+                $dir = $lista[$value]->img_foto;
+
+                if ($true == true) {
+                    $Excluido = unlink($dir);
+                } else {
+                    echo "<script> alert('PROBLEMA AO EXCLUIR FOTO, TENTE NOVAMENTE!') </script>";
+                    echo "<script> location.href=('".site_url()."/Galeria/AlteraNovasFotos/".$lista[$value]->fk_id_album."')</script>";
+                } 
+               
+            }
+            if ($Excluido == true) {
+                echo "<script> alert('FOTO EXCLUÍDA COM SUCESSO!') </script>";
+                echo "<script> location.href=('".site_url()."/Galeria/AlteraNovasFotos/".$lista[$value]->fk_id_album."')</script>";
+            }
+    }
 }

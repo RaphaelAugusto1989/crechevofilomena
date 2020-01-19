@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$config['base_url'] = '';
 
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
-    $config['base_url'] = 'http://localhost/vofilomena/';
+    $config['base_url'] = 'http://localhost/crechevofilomena/';
 }
 else {
     $config['base_url'] = 'https://crechevofilomena.com.br/';

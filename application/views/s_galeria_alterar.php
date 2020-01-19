@@ -15,6 +15,15 @@
 
         ?>
         <form action="<?= site_url()?>/Galeria/AlteraGaleria" method="post" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-group col-md-7">
+            </div>
+            <div class="form-group col-md-3">
+                <a href="<?= site_url('Galeria/AlteraNovasFotos/'.$album[$value]->id_album)?>" class="btn btn-info">INSERIR E ALTERAR FOTOS</a>
+            </div>
+            <div class="form-group col-md-2">
+            </div>
+        </div>
             <div class="form-group">
                 <label for="TitBanner">Titulo do álbum:</label>
                 <input type="hidden" name="id" value="<?= $album[$value]->id_album;?>">
@@ -28,7 +37,6 @@
             </div>
         
             <div class="form-group text-center">
-                <a href="<?= site_url('Galeria/AlteraNovasFotos/'.$album[$value]->id_album)?>" class="btn btn-success">INSERIR MAIS FOTOS</a>
                 <input type="submit" name="" class="btn btn-success" value="ALTERAR ÁLBUM">
             </div>
         <?php
